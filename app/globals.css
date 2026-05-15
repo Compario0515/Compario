@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { font-feature-settings: "kern" 1, "liga" 1; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gray-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-700 transition-colors;
+  }
+  .btn-outline {
+    @apply border border-gray-300 text-gray-700 px-5 py-2 rounded-full text-sm font-medium hover:border-gray-900 hover:text-gray-900 transition-colors;
+  }
+  .card {
+    @apply border border-gray-100 rounded-xl bg-white;
+  }
+  .label {
+    @apply text-[10px] font-medium tracking-widest uppercase text-gray-400;
+  }
+}
